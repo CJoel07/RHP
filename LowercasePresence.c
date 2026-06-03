@@ -9,11 +9,8 @@ int main() {
         if(str[i] >= 'a' && str[i] <= 'z'){
             flag = flag | (1 << (str[i] - 'a'));
         }
-        if(str[i] >= 'A' && str[i] <= 'Z'){
-            f1 = f1 | (1 << (str[i] - 'A'));
-        }
     }
-    if((flag == (1 << 26) - 1) && (f1 == (1 << 26) - 1)){
+    if(flag == (1 << 26) - 1){
         printf("Yes");
     }
     else{
